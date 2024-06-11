@@ -1,0 +1,191 @@
+
+
+
+.App {
+  
+  text-align: center;
+}
+
+#app{
+  background-color: #131313 !important;
+  color:#f8f8f8;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  background-color: #131313;
+  color: #f8f8f8;
+  width: 25%;
+  padding: 10px;
+  height: 360px; 
+  box-sizing: border-box;
+}
+
+.card{
+  background-color: #131313 !important;
+  color: #f8f8f8 !important;
+}
+
+ul,li {
+  list-style: none; /* Removes bullet points */
+}
+
+.RecomMessage {
+  text-align: center; /* Center-align the content within the div */
+}
+
+.RecomMessage span {
+  display: block; /* Make the span a block-level element to force it onto a new line */
+  margin: 0 auto; /* Center the span horizontally */
+}
+
+.RecomMessage img {
+  display: block; /* Make the image a block-level element to force it onto a new line */
+  margin: 10px auto; /* Center the image horizontally with some spacing */
+}
+
+.movie-category{
+  display: flex;
+  flex-wrap: wrap;
+}
+.genres {
+  margin-right: 10px; /* Adjust the right margin for spacing between genres */
+}
+.category-label {
+  margin-right: 10px; /* Add space between the label and genres */
+}
+
+.new-line-description {
+  display: block;
+}
+
+.search-bar {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  outline: none;
+  width: 100%;
+  max-width: 600px; 
+  box-sizing: border-box; 
+  margin-top: 5%;
+  color:black;
+}
+
+.centered-video {
+  width: 50%;
+  display: block;
+  /* margin-top: 5%;
+  margin-left: 15%; Center the video horizontally */
+  margin-left: 20%;
+}
+
+ .title{
+  font-family: "Roboto", sans-serif; 
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: f8f8f8;
+  margin-left: 40%;
+}
+
+/* NavBar.css */
+
+.navbar-with-background {
+  background-image: url('https://raw.githubusercontent.com/zhjiang1103/FinalProject/85aa26341a572c51058b9fd8c83d224987e22e79/client/public/Rectangle%2056.png'); /* Use a relative path */
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+.btn-danger {
+  --bs-btn-color: #131313 !important;
+  --bs-btn-bg: #FECF58 !important;
+  --bs-btn-border-color: #FECF58 !important;
+  --bs-btn-hover-color:#FECF58 !important;
+  --bs-btn-hover-bg: darkorange !important;
+}
+
+a {
+  color: #FECF58 ;
+  text-decoration: auto !important;
+  font-size: x-large;
+}
+
+
+a:hover {
+  color: #131313 !important;
+}
+
+html {
+  background-color: #131313;
+}
+
+.navbar{
+  --bs-navbar-padding-y: 5rem !important;
+}
+
+
+.dropdown{
+  padding: 8px !important;
+}
+
+h2{
+  
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+    
+}
+
+button{
+  margin-top: 4px !important;
+  margin-left: 5px !important ;
+}
+
