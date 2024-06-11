@@ -3,7 +3,7 @@ import {  FaPause, FaPlay } from 'react-icons/fa';
 
 const BackgroundMusic = () => {
     const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef(new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3'));
+    const audioRef = useRef(new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-17.mp3'));
   
     useEffect(() => {
       audioRef.current.loop = true;

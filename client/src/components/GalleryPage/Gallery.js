@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes,Link, Switch, useParams } from 'react-router-dom';
-import { FaHeart, FaShareAlt, FaHome, FaUniversity, FaPaintBrush } from 'react-icons/fa';
 import BackgroundMusic from './BackgroundMusic';
 import NavBar from '../nav-bar';
 
@@ -57,7 +56,7 @@ const artworks = [
 
 
 const getRandomSpan = () => {
-  const spans = [ '1','2', '3', '4'];
+  const spans = [ '2', '3', '4'];
   return spans[Math.floor(Math.random() * spans.length)];
 };
 
@@ -70,10 +69,6 @@ const ArtCard = ({ title, artist, imageUrl, index }) => {
       <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
         <h2 className="text-white text-lg font-bold">{title}</h2>
         <p className="text-white text-sm">{artist}</p>
-        <div className="flex space-x-2 mt-2">
-          <button className="text-white transform transition-transform duration-300 hover:scale-125"><FaHeart /></button>
-          <button className="text-white transform transition-transform duration-300 hover:scale-125"><FaShareAlt /></button>
-        </div>
       </div>
     </Link>
   );
@@ -87,7 +82,7 @@ const Header = () => (
 );
 
 const MosaicLayout = ({ artworks }) => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <div className="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 xl:grid-cols-16 gap-6">
     {artworks.map((artwork, index) => (
       <ArtCard
         key={index}

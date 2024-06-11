@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import NavBar from '../nav-bar'
-import { FaPaintBrush, FaPalette, FaImages, FaBars, FaTimes, FaHome, FaInfoCircle, FaEnvelope, FaPhotoVideo } from 'react-icons/fa'
-import anime from 'animejs'
+
 import IconSection from './IconSection'
 
 const AnimatedBackground = () => {
